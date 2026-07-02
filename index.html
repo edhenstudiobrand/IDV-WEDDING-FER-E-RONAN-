@@ -530,13 +530,13 @@ footer img{height:26px;opacity:.5;}
 .video-demo{border:1px solid var(--div);background:#000;max-width:480px;margin:0 auto;}
 .video-demo video{width:100%;display:block;}
 
-/* INSPIRATION GRID — fixed, symmetric, 6 photos */
+/* INSPIRATION GRID — papelaria, fixed, symmetric */
 .insp-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:2px;
-  margin-top:3rem;
-  max-width:900px;
+  margin-top:2.5rem;
+  max-width:1100px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -553,22 +553,28 @@ footer img{height:26px;opacity:.5;}
   .insp-grid{grid-template-columns:repeat(2,1fr);}
 }
 
-/* INSPIRATION SWIPE — pure CSS, no JS dependency */
-.gallery-wrap{
-  overflow-x:auto;
-  overflow-y:hidden;
-  margin-top:3rem;
-  -webkit-overflow-scrolling:touch;
-  scroll-snap-type:x proximity;
-  opacity:1;
-  transform:none;
+/* NOIVOS GRID — casal, fotos lado a lado */
+.noivos-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:2px;
+  margin-top:2.5rem;
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
 }
-.gallery-track{display:flex;gap:1.5rem;padding:0 2rem 1rem;width:max-content;}
-.gallery-track img{height:340px;width:auto;max-width:280px;object-fit:cover;filter:grayscale(55%) contrast(1.02);transition:filter .4s ease,transform .4s ease;border:1px solid var(--div);scroll-snap-align:start;flex-shrink:0;display:block;}
-.gallery-track img:hover{filter:grayscale(0%);transform:scale(1.03);}
-
+.noivos-grid img{
+  width:100%;
+  height:100%;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(15%) contrast(1.02);
+  transition:filter .4s ease,transform .4s ease;
+}
+.noivos-grid img:hover{filter:grayscale(0%);transform:scale(1.02);}
 @media(max-width:640px){
-  .gallery-track img{height:220px;}
+  .noivos-grid{grid-template-columns:repeat(1,1fr);max-width:420px;}
 }
 </style>
 </head>
@@ -850,33 +856,28 @@ footer img{height:26px;opacity:.5;}
   <div class="sec-wrap" style="padding-bottom:0;">
     <span class="tag reveal">inspiração</span>
     <h2 class="h-section reveal" style="transition-delay:.1s">Um universo em preto,<br><em>branco e dourado.</em></h2>
+    <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);margin-top:1rem;">papelaria</p>
   </div>
 
   <div class="insp-grid" style="opacity:1;">
-    <img src="foto-grade-1.jpg" alt="Inspiracao de identidade visual de casamento">
-    <img src="foto-grade-2.jpg" alt="Inspiracao de identidade visual de casamento">
-    <img src="foto-grade-3.jpg" alt="Inspiracao de identidade visual de casamento">
-    <img src="foto-grade-4.jpg" alt="Inspiracao de identidade visual de casamento">
-    <img src="foto-grade-5.jpg" alt="Inspiracao de identidade visual de casamento">
-    <img src="foto-grade-6.jpg" alt="Inspiracao de identidade visual de casamento">
+    <img src="papelaria-1.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-2.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-3.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-4.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-5.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-6.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-7.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-8.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-9.jpg" alt="Referencia de papelaria de casamento">
+    <img src="papelaria-10.jpg" alt="Referencia de papelaria de casamento">
   </div>
 
   <div class="sec-wrap" style="padding-top:4rem;padding-bottom:0;">
-    <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);">mais referências · deslize para o lado →</p>
+    <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);">noivos</p>
   </div>
-  <div class="gallery-wrap" style="opacity:1;">
-    <div class="gallery-track">
-      <img src="foto-galeria-1.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-2.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-3.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-4.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-5.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-6.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-7.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-8.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-9.jpg" alt="Inspiracao de identidade visual de casamento">
-      <img src="foto-galeria-10.jpg" alt="Inspiracao de identidade visual de casamento">
-    </div>
+  <div class="noivos-grid" style="opacity:1;">
+    <img src="noivos-1.jpg" alt="Referencia de fotografia de noivos">
+    <img src="noivos-2.jpg" alt="Referencia de fotografia de noivos">
   </div>
 </section>
 
